@@ -1,0 +1,28 @@
+{
+    "name": "qcth/wdt",
+    "description": "this is test wdt",
+    "authors": [
+        {
+            "name": "qcth",
+            "email": "qcth@foxmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "autoload": {
+        "psr-4":{
+            "Qcth\\Wdt\\":"src/"
+        }
+    },
+    "require": {    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Qcth\\Wdt\\Provider\\ServiceProvider"
+            ],
+            "aliases": {
+                "Wdp": "Qcth\\Wdt\\Facade\\Wdt"
+            }
+        }
+    }
+}
